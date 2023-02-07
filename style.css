@@ -1,0 +1,208 @@
+*,
+*:before,
+*:after {    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*GENERAL STANDARDS-------------------*/
+body{
+    margin: 0;
+    background-color: #6D8A55;
+}
+h1{
+    text-align: center;
+    color: greenyellow;
+    font-size: 25px;
+}
+h2{
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 1px;
+    margin-bottom: 20px;
+    font-weight: 620;
+
+}
+
+h4{
+    display: block;
+    margin: 10px 15px 5px 15px;
+    font-weight: 550;
+    text-shadow: 1px 1px 1px;
+}
+
+p{
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 21px;
+}
+
+
+/*HEADER-------------------------------*/
+
+header{background-color: black;
+position: fixed;
+width: 100%;
+height: 75px;
+display: flex;
+align-items: center;
+z-index: 3;
+
+}
+
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-menu"]:before {
+  font-family: 'entypo', sans-serif;
+  color: white;
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.title{
+    width: 100%;
+}
+
+.menu{
+    position: absolute;
+    width: 75%;
+    height: min-content;
+    top: 75px;
+    background-color: #666;
+    display: flex;
+    transform: translate(-100%,0);
+    transition: all 0.6s;
+    opacity: 0.9;
+    align-items: center;
+}
+
+.blankspace{
+    width: 40%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.open{
+    transform: translate(0,0);
+    transition: all 0.6s;
+}
+
+/*MAIN --------------------------------------------*/
+
+main{
+    width: 100%;    
+}
+
+.img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+    z-index: 1;
+}
+#img1{
+    background-image: url(./Images/img1tt.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    display: flex;
+}
+
+#about{
+    
+        background-image: url(./Images/img1tt.jpg);
+        height: 100vh;
+        display: flex;
+}
+.slogan{
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    background-color: rgba(255, 255, 255, 0.11);
+    position: relative;
+    top: 170px;
+    font-size: 70px;
+    color: #303030;
+    text-shadow: 3px 5px 5px #333;
+    text-transform: none;
+    width: 100%;
+    height:min-content;
+    text-align: center;
+    font-weight: 550;
+    padding: 1em;
+    z-index: inherit;
+}
+
+#img2{
+    background-image: url(./Images/img2.jpg);
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.description{
+    background-color: #6d8a55;
+    top: 100%;
+    width: 100%;
+    height: min-content;
+    position: absolute;
+    padding: 20px 20% 56px 20%;
+    text-align: center;
+    z-index: 2;
+}
+
+.descriptionimgs{
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+picture{
+    margin: 5px;
+}
+picture img{
+    width: 100%;
+    position: relative;
+}
+
+/*FOOTER-----------------------*/
+
+footer{
+    background-color: #000;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url(https://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-github"]:before {
+  font-family: 'brandico', sans-serif;
+  color: greenyellow;
+  font-size: 35px;
+  text-shadow: 0;
+}
+
+.brandico-github a{
+    color: greenyellow;
+    font-size: 35px;
+    text-shadow: 1px 1px 0;
+}
